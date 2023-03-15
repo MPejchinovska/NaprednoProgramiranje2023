@@ -2,10 +2,10 @@
 #include <string>
 using namespace std;
 
-
+//Definira tip na nabrojuvanje Mesec so vrednosti za sekoj od 12te meseci.
 enum Mesec {
     January=1,February,March,April,May,June,July,August,September,October,November,December};
-
+//Definira funkcija 'sezona' koja trae eden mesecen broj i ja vrakja soodvetnata sezona.
 std::string sezona(int mesec) {
     switch(mesec) {
         case December:
@@ -29,7 +29,8 @@ std::string sezona(int mesec) {
     }
 
 }
-
+//Funkcijata getOrdinalSuffix se koristi za dodavanje na soodvetnata redovna nastavka.
+//Funkcijata getOrdinalSuffix zema cel broj kako vlez i ja vrakja soodvetnata redna nastavka vrz osnova na poslednite dve cifri od brojot.
 std::string getOrdinalSuffix(int broj) {
     int Poslednacifra = broj % 10;
     int Predposlednatacifra = (broj / 10) % 10;
@@ -49,7 +50,7 @@ std::string getOrdinalSuffix(int broj) {
         return "ti";
     }
 }
-
+//Koristi jamka za da otpecati spisok so site meseci, zaedno so nivnata soodvetna sezona i posledovatelen broj na mesec.
 int main() {
     std::cout<<"Meseci vo godinata:"<< std::endl;
     int i;
@@ -66,7 +67,7 @@ int main() {
     } else {
         std::cout<<"Mesecot "<<Mesec <<" e vo " << sezona(Mesec) <<" i e " << Mesec << getOrdinalSuffix(Mesec) << " mesec vo godinata." << std::endl;
     }
-    return 0;
     cout<<"Marijana Pejchinovska";
+    return 0;
 }
 //Marijana Pejchinovska
