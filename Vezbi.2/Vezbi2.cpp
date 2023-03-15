@@ -76,6 +76,5 @@ int main() {
 	d.shuffle();
 	std::cout << " " << std::endl;
 	d.show();
-	cout<<"Marijana Pejchinovska";
 }
 //Marijana Pejchinovska
